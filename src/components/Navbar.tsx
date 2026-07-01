@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -42,7 +43,7 @@ export default function Navbar() {
           <a href="#results" className="text-sm font-medium text-white hover:text-blue-300 transition-colors duration-200">Results</a>
           <a href="#process" className="text-sm font-medium text-white hover:text-blue-300 transition-colors duration-200">Process</a>
           <a href="#testimonials" className="text-sm font-medium text-white hover:text-blue-300 transition-colors duration-200">Testimonials</a>
-          <a href="course.html" className="text-sm font-bold px-3 py-1.5 rounded-full transition-all duration-200 cursor-pointer" style={{ background: 'rgba(201,168,76,0.15)', color: '#F0D070', border: '1px solid rgba(201,168,76,0.35)' }}>Course</a>
+          <Link href="/course" className="text-sm font-bold px-3 py-1.5 rounded-full transition-all duration-200 cursor-pointer" style={{ background: 'rgba(201,168,76,0.15)', color: '#F0D070', border: '1px solid rgba(201,168,76,0.35)' }}>Course</Link>
         </div>
 
         {/* CTA */}
