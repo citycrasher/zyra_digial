@@ -21,9 +21,9 @@ export default function Hero() {
             </div>
 
             <h1 className="hero-line-2 font-display t-display font-extrabold text-white leading-tight mb-6">
-              Your Business<br />
-              <span className="gradient-text">Deserves More</span><br />
-              Than Invisible.
+              We Build End-to-End<br />
+              <span className="gradient-text">Growth Systems</span><br />
+              That Bring You Leads &amp; Sales Every Day
             </h1>
             <span className="sr-only">Digital Marketing Agency — Meta Ads, Google Ads, SEO &amp; Web Design</span>
 
