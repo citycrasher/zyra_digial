@@ -1,3 +1,5 @@
+'use client'
+
 export default function Certifications() {
   return (
     <section className="py-20 bg-white">

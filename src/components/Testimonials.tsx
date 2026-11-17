@@ -1,3 +1,5 @@
+'use client'
+
 const Stars = () => (
   <div className="flex gap-0.5 mb-3" aria-label="5 out of 5 stars">
     {[1,2,3,4,5].map(i => (
