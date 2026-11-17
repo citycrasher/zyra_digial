@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Studies | Real Results from Real Clients | Zyra Digital</title>
+<meta name="description" content="See how Zyra Digital helped real businesses achieve 26.91 ROAS, ₹45L+ revenue, and 7x ROAS through Meta Ads, Multi-Channel funnels, and influencer strategy.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { DEFAULT: '#1C0D34', dark: '#120825', light: '#3D1F6E', navy: '#1C0D34', 50: '#F3EEFF', 100: '#E0D0FF' },
+          gold: { DEFAULT: '#C9A84C', light: '#F0D070', dark: '#A07830', 50: '#FDF8EC' },
+        },
+        fontFamily: {
+          display: ['"League Spartan"', 'sans-serif'],
+          body: ['"Plus Jakarta Sans"', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+<style>
+  :root { --brand: #1C0D34; --lavender: #DDB5F4; --gold: #C9A84C; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fff; color: #1C0D34; }
+  .gradient-text { background: linear-gradient(135deg, #DDB5F4 0%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+  .delay-1 { transition-delay: 0.1s; }
+  .delay-2 { transition-delay: 0.2s; }
+  .delay-3 { transition-delay: 0.3s; }
+
+  /* Navbar */
+  #navbar { transition: all 0.3s ease; }
+  #navbar.nav-scrolled { background: rgba(28,13,52,0.97); backdrop-filter: blur(20px); box-shadow: 0 1px 20px rgba(0,0,0,0.3); }
+
+  /* Hero */
+  .cs-hero { background: linear-gradient(135deg, #1C0D34 0%, #0f0820 60%, #1a0b30 100%); }
+
+  /* Case study card */
+  .cs-card { background: #fff; border: 1.5px solid #e5e7eb; border-radius: 24px; overflow: hidden; }
+  .cs-card:hover { border-color: rgba(221,181,244,0.6); box-shadow: 0 12px 40px rgba(28,13,52,0.1); }
+  .cs-card-header { background: linear-gradient(135deg, #1C0D34 0%, #2a1050 100%); padding: 40px; }
+  .cs-card-body { padding: 40px; }
+
+  /* Stat box */
+  .stat-box { background: rgba(221,181,244,0.08); border: 1px solid rgba(221,181,244,0.2); border-radius: 16px; padding: 20px; text-align: center; }
+  .stat-box-dark { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 16px; text-align: center; }
+
+  /* Timeline */
+  .timeline-item { position: relative; padding-left: 32px; }
+  .timeline-item::before { content: ''; position: absolute; left: 10px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: #DDB5F4; }
+  .timeline-item::after { content: ''; position: absolute; left: 14px; top: 20px; width: 2px; height: calc(100% + 8px); background: rgba(221,181,244,0.2); }
+  .timeline-item:last-child::after { display: none; }
+
+  @media (max-width: 768px) {
+    .cs-card-header, .cs-card-body { padding: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-40 py-4" style="background:linear-gradient(to bottom, rgba(28,13,52,0.9), transparent);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3" aria-label="Zyra Digital Home">
+      <img src="logo.png" alt="Zyra Digital" style="height:36px;width:auto;object-fit:contain;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span style="display:none;align-items:center;gap:8px;">
+        <span style="width:32px;height:32px;background:#DDB5F4;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;color:#1C0D34;font-family:'League Spartan',sans-serif;">Z</span>
+        <span style="font-weight:800;font-size:18px;color:#fff;font-family:'League Spartan',sans-serif;">Zyra Digital</span>
+      </span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="text-sm font-medium text-white/80 hover:text-white transition-colors">Home</a>
+      <a href="index.html#services" class="text-sm font-medium text-white/80 hover:text-white transition-colors">Services</a>
+      <a href="casestudies.html" class="text-sm font-medium text-white transition-colors">Case Studies</a>
+      <a href="index.html#contact" class="text-sm font-medium text-white/80 hover:text-white transition-colors">Contact</a>
+    </div>
+    <a href="https://wa.me/919999999999?text=Hi!%20I%20want%20a%20free%20strategy%20call" target="_blank" rel="noopener"
+      class="hidden sm:flex items-center gap-2 font-semibold text-sm px-5 py-2.5 rounded-full transition-colors"
+      style="background:#DDB5F4;color:#1C0D34;">
+      Get Free Strategy Call
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+    </a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="cs-hero pt-32 pb-16">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="reveal visible">
+      <span class="inline-block text-xs font-bold tracking-widest uppercase mb-4 px-4 py-2 rounded-full" style="color:#DDB5F4;background:rgba(221,181,244,0.1);border:1px solid rgba(221,181,244,0.2);letter-spacing:0.15em;">Case Studies</span>
+      <h1 class="font-display font-extrabold text-white mb-5" style="font-size:clamp(2rem,6vw,3.5rem);line-height:1.1;">
+        Real Businesses. <span class="gradient-text">Real Results.</span>
+      </h1>
+      <p class="text-white/60 text-lg max-w-2xl mx-auto">
+        Here's what happens when strategy, execution, and accountability come together. These are real client outcomes — no fake numbers, no cherry-picking.
+      </p>
+    </div>
+    <!-- Summary stats -->
+    <div class="grid grid-cols-3 gap-6 mt-12 max-w-2xl mx-auto reveal visible delay-1">
+      <div>
+        <div class="text-3xl font-extrabold text-white font-display">26.91x</div>
+        <div class="text-white/50 text-sm mt-1">Highest ROAS achieved</div>
+      </div>
+      <div class="border-x" style="border-color:rgba(255,255,255,0.1);">
+        <div class="text-3xl font-extrabold text-white font-display">₹70L+</div>
+        <div class="text-white/50 text-sm mt-1">Revenue generated</div>
+      </div>
+      <div>
+        <div class="text-3xl font-extrabold text-white font-display">3</div>
+        <div class="text-white/50 text-sm mt-1">In-depth case studies</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+
+  <!-- ═══ CASE STUDY 1: D2C Brand — 26.91 ROAS ═══ -->
+  <article class="cs-card reveal visible" id="cs1">
+    <div class="cs-card-header">
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-blue-200 px-4 py-1.5 rounded-full text-xs font-semibold mb-5">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+        D2C Brand · Meta Ads
+      </div>
+      <h2 class="font-display font-extrabold text-white mb-3" style="font-size:clamp(1.4rem,4vw,2rem);">
+        How We Helped a D2C Brand Generate <span class="gradient-text">₹45 Lakhs+</span> in Revenue With 26.91 ROAS
+      </h2>
+      <p class="text-white/60 text-sm leading-relaxed max-w-2xl">
+        A D2C brand in a competitive market needed a scalable acquisition system. Rather than immediately increasing ad spend, we focused on understanding who was most likely to purchase and what messaging resonated — before scaling.
+      </p>
+      <!-- Key results strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
+        <div class="stat-box-dark">
+          <div class="text-2xl font-extrabold text-white">26.91x</div>
+          <div class="text-blue-300 text-xs mt-1">ROAS</div>
+        </div>
+        <div class="stat-box-dark">
+          <div class="text-2xl font-extrabold" style="color:#DDB5F4;">₹45.9L+</div>
+          <div class="text-blue-300 text-xs mt-1">Revenue</div>
+        </div>
+        <div class="stat-box-dark">
+          <div class="text-2xl font-extrabold text-white">6,170</div>
+          <div class="text-blue-300 text-xs mt-1">Total Orders</div>
+        </div>
+        <div class="stat-box-dark">
+          <div class="text-2xl font-extrabold text-white">₹1.7L+</div>
+          <div class="text-blue-300 text-xs mt-1">Ad Spend</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-card-body">
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Challenges -->
+        <div>
+          <h3 class="font-display font-bold text-brand text-lg mb-4 flex items-center gap-2">
+            <span style="width:28px;height:28px;background:#FEE2E2;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;">
+              <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+            </span>
+            Challenges
+          </h3>
+          <div class="space-y-3">
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">Audience Targeting</p>
+              <p class="text-gray-500 text-sm mt-0.5">The market had strong demand, but reaching the right audience with the right messaging was critical to converting that demand into sales.</p>
+            </div>
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">Creative Performance</p>
+              <p class="text-gray-500 text-sm mt-0.5">Needed to identify which creative angles and messaging could consistently generate purchases before scaling the campaigns.</p>
+            </div>
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">Website Conversion</p>
+              <p class="text-gray-500 text-sm mt-0.5">Even with strong ad performance, the website experience needed to convert visitors who were ready to purchase.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="font-semibold text-sm text-brand">Scalability</p>
+              <p class="text-gray-500 text-sm mt-0.5">The goal was to identify winning combinations and scale them profitably — not just generate initial sales.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solutions -->
+        <div>
+          <h3 class="font-display font-bold text-brand text-lg mb-4 flex items-center gap-2">
+            <span style="width:28px;height:28px;background:#D1FAE5;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;">
+              <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </span>
+            Our Approach
+          </h3>
+          <div class="space-y-3">
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">Market & Demand Analysis</p>
+              <p class="text-gray-500 text-sm mt-0.5">Analysed market demand, customer behaviour patterns, and potential audience segments to find where the strongest opportunities were.</p>
+            </div>
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">Audience & Creative Testing</p>
+              <p class="text-gray-500 text-sm mt-0.5">Tested multiple audience types and creative angles simultaneously to identify the most effective combinations before scaling.</p>
+            </div>
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">Website Optimisation</p>
+              <p class="text-gray-500 text-sm mt-0.5">Identified and fixed drop-off points in the purchase flow to ensure the website converted the traffic the ads were driving.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="font-semibold text-sm text-brand">Scaling Winning Creatives</p>
+              <p class="text-gray-500 text-sm mt-0.5">Increased spend on best-performing campaigns and creatives while continuously monitoring performance and optimising.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results callout -->
+      <div class="mt-10 rounded-2xl p-6" style="background:linear-gradient(135deg,rgba(28,13,52,0.05),rgba(221,181,244,0.08));border:1.5px solid rgba(221,181,244,0.25);">
+        <p class="font-display font-bold text-brand text-base mb-1">The Outcome</p>
+        <p class="text-gray-600 text-sm leading-relaxed">By first understanding the market, then identifying the right audience, testing multiple creative angles, optimising the website, and finally scaling the winning combinations, we turned strong market demand into <strong>₹45 Lakhs+ in revenue with a 26.91 ROAS</strong>.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- ═══ CASE STUDY 2: EdTech Academy ═══ -->
+  <article class="cs-card reveal" id="cs2">
+    <div class="cs-card-header" style="background:linear-gradient(135deg,#1C0D34 0%,#1a3a1a 100%);">
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-green-200 px-4 py-1.5 rounded-full text-xs font-semibold mb-5">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        EdTech Academy · Multi-Channel Funnel
+      </div>
+      <h2 class="font-display font-extrabold text-white mb-3" style="font-size:clamp(1.4rem,4vw,2rem);">
+        How We Helped an EdTech Academy Go From <span style="color:#86efac;">0</span> to <span style="color:#86efac;">₹10 Lakhs+</span> Revenue in 3 Months
+      </h2>
+      <p class="text-white/60 text-sm leading-relaxed max-w-2xl">
+        A Playwright automation expert with 9+ years of experience wanted to launch his dream academy. The academy was completely new to the market with no audience, no marketing system, and no sales process.
+      </p>
+      <!-- Key results strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
+        <div class="stat-box-dark">
+          <div class="text-2xl font-extrabold text-white">53</div>
+          <div class="text-green-300 text-xs mt-1">Enrollments</div>
+        </div>
+        <div class="stat-box-dark">
+          <div class="text-2xl font-extrabold" style="color:#86efac;">600+</div>
+          <div class="text-green-300 text-xs mt-1">Leads</div>
+        </div>
+        <div class="stat-box-dark">
+          <div class="text-2xl font-extrabold text-white">₹100</div>
+          <div class="text-green-300 text-xs mt-1">Avg CPL</div>
+        </div>
+        <div class="stat-box-dark">
+          <div class="text-2xl font-extrabold text-white">2K+</div>
+          <div class="text-green-300 text-xs mt-1">LinkedIn Followers</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-card-body">
+      <!-- Channels used -->
+      <div class="mb-8">
+        <h3 class="font-display font-bold text-brand text-lg mb-4">Multi-Channel Strategy</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div class="flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-xl" style="background:rgba(28,13,52,0.05);color:#1C0D34;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#DDB5F4;flex-shrink:0;"></span>Meta Ads
+          </div>
+          <div class="flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-xl" style="background:rgba(28,13,52,0.05);color:#1C0D34;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#DDB5F4;flex-shrink:0;"></span>Webinar Funnel
+          </div>
+          <div class="flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-xl" style="background:rgba(28,13,52,0.05);color:#1C0D34;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#DDB5F4;flex-shrink:0;"></span>Direct Lead Gen
+          </div>
+          <div class="flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-xl" style="background:rgba(28,13,52,0.05);color:#1C0D34;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#DDB5F4;flex-shrink:0;"></span>Organic Content
+          </div>
+          <div class="flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-xl" style="background:rgba(28,13,52,0.05);color:#1C0D34;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#DDB5F4;flex-shrink:0;"></span>LinkedIn
+          </div>
+          <div class="flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-xl" style="background:rgba(28,13,52,0.05);color:#1C0D34;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#DDB5F4;flex-shrink:0;"></span>Email & WhatsApp
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <h3 class="font-display font-bold text-brand text-lg mb-4 flex items-center gap-2">
+            <span style="width:28px;height:28px;background:#FEE2E2;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;">
+              <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+            </span>
+            Challenges
+          </h3>
+          <div class="space-y-3">
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">New Academy from Scratch</p>
+              <p class="text-gray-500 text-sm mt-0.5">No existing audience, no brand visibility, and no marketing system. Needed to build trust in a competitive EdTech market from day one.</p>
+            </div>
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">No Sales Team or Process</p>
+              <p class="text-gray-500 text-sm mt-0.5">The client had no structured sales process to handle or convert incoming leads — everything needed to be built from the ground up.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="font-semibold text-sm text-brand">Initial Funnel Didn't Convert</p>
+              <p class="text-gray-500 text-sm mt-0.5">The initial webinar funnel generated 150+ attendees but only 5 conversions. Required a pivot in strategy.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-display font-bold text-brand text-lg mb-4 flex items-center gap-2">
+            <span style="width:28px;height:28px;background:#D1FAE5;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;">
+              <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </span>
+            What We Did
+          </h3>
+          <div class="space-y-3">
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">Pivoted to Direct Lead Gen</p>
+              <p class="text-gray-500 text-sm mt-0.5">After 15 days, shifted from webinar-based funnels to direct lead generation — generating 150+ leads in the next 15 days at ₹100 CPL.</p>
+            </div>
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">LinkedIn & Organic Growth</p>
+              <p class="text-gray-500 text-sm mt-0.5">Built LinkedIn presence to 2,000+ followers and started generating organic leads alongside paid campaigns.</p>
+            </div>
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">WhatsApp Community & Email</p>
+              <p class="text-gray-500 text-sm mt-0.5">Nurtured leads through WhatsApp communities and email sequences to build trust before the sales call.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="font-semibold text-sm text-brand">Structured Sales Process</p>
+              <p class="text-gray-500 text-sm mt-0.5">Built a structured sales SOP for the client to systematically handle and convert incoming leads.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 rounded-2xl p-6" style="background:linear-gradient(135deg,rgba(16,61,16,0.04),rgba(134,239,172,0.08));border:1.5px solid rgba(134,239,172,0.2);">
+        <p class="font-display font-bold text-brand text-base mb-1">The Outcome</p>
+        <p class="text-gray-600 text-sm leading-relaxed">Within just 3 months, the client turned his long-term dream into a growing business with a complete marketing and sales system — <strong>₹10 Lakhs+ revenue, 53 enrollments, 600+ leads at ₹100 CPL</strong>, and a 2,000+ LinkedIn following built from zero.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- ═══ CASE STUDY 3: Women's Clothing Brand ═══ -->
+  <article class="cs-card reveal" id="cs3">
+    <div class="cs-card-header" style="background:linear-gradient(135deg,#1C0D34 0%,#3a0d2a 100%);">
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-pink-200 px-4 py-1.5 rounded-full text-xs font-semibold mb-5">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        Women's Clothing Brand · Meta Ads + Influencer Marketing
+      </div>
+      <h2 class="font-display font-extrabold text-white mb-3" style="font-size:clamp(1.4rem,4vw,2rem);">
+        How We Helped a Women's Clothing Brand Scale From <span style="color:#f9a8d4;">1 ROAS</span> to <span style="color:#f9a8d4;">7+ ROAS</span>
+      </h2>
+      <p class="text-white/60 text-sm leading-relaxed max-w-2xl">
+        The brand had strong products and was spending on Meta Ads but stuck around 1 ROAS. The root cause wasn't the ads — it was a trust gap. Customers were adding to cart but not purchasing because they weren't confident in the brand.
+      </p>
+      <!-- Key results strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
+        <div class="stat-box-dark">
+          <div class="text-2xl font-extrabold text-white">7.14x</div>
+          <div class="text-pink-300 text-xs mt-1">ROAS Achieved</div>
+        </div>
+        <div class="stat-box-dark">
+          <div class="text-2xl font-extrabold" style="color:#f9a8d4;">₹14.5L+</div>
+          <div class="text-pink-300 text-xs mt-1">Purchase Value</div>
+        </div>
+        <div class="stat-box-dark">
+          <div class="text-2xl font-extrabold text-white">₹20.66</div>
+          <div class="text-pink-300 text-xs mt-1">Cost Per Action</div>
+        </div>
+        <div class="stat-box-dark">
+          <div class="text-2xl font-extrabold text-white">1 Month</div>
+          <div class="text-pink-300 text-xs mt-1">Time to Result</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-card-body">
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <h3 class="font-display font-bold text-brand text-lg mb-4 flex items-center gap-2">
+            <span style="width:28px;height:28px;background:#FEE2E2;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;">
+              <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+            </span>
+            The Problem
+          </h3>
+          <div class="space-y-3">
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">Stuck at 1 ROAS Despite Ad Spend</p>
+              <p class="text-gray-500 text-sm mt-0.5">The brand was spending on Meta Ads but consistently returning around 1 ROAS — just breaking even with no profitable growth.</p>
+            </div>
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">High Cart Abandonment</p>
+              <p class="text-gray-500 text-sm mt-0.5">Customers were adding products to cart but not completing purchases — indicating a trust issue, not a demand issue.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="font-semibold text-sm text-brand">Generic Ad Creatives</p>
+              <p class="text-gray-500 text-sm mt-0.5">The existing ad creatives lacked authenticity and social proof needed to build trust with potential first-time buyers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-display font-bold text-brand text-lg mb-4 flex items-center gap-2">
+            <span style="width:28px;height:28px;background:#D1FAE5;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;">
+              <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </span>
+            Our Strategy
+          </h3>
+          <div class="space-y-3">
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">Market Research</p>
+              <p class="text-gray-500 text-sm mt-0.5">Identified that cart abandonment was driven by a lack of trust, not a lack of interest. Customers needed social proof before purchasing.</p>
+            </div>
+            <div class="timeline-item pb-3">
+              <p class="font-semibold text-sm text-brand">Influencer Partnerships</p>
+              <p class="text-gray-500 text-sm mt-0.5">Identified and partnered with the right influencers to create authentic video content that would build trust with potential customers.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="font-semibold text-sm text-brand">Influencer Content as Meta Ads</p>
+              <p class="text-gray-500 text-sm mt-0.5">Instead of using influencer videos only for organic reach, used the best-performing creator content as paid Meta Ad assets — combining authenticity with scale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 rounded-2xl p-6" style="background:linear-gradient(135deg,rgba(61,13,42,0.04),rgba(249,168,212,0.08));border:1.5px solid rgba(249,168,212,0.2);">
+        <p class="font-display font-bold text-brand text-base mb-1">The Outcome</p>
+        <p class="text-gray-600 text-sm leading-relaxed">Within just 1 month, the brand went from 1 ROAS to <strong>7.14 ROAS</strong> — generating <strong>₹14,50,313+ in purchase value</strong> at a ₹20.66 cost per action. The strategy proved that instead of simply increasing ad spend, understanding why customers were adding products to their carts but not purchasing was the key to unlocking better performance.</p>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+<!-- CTA Section -->
+<section style="background:linear-gradient(135deg,#1C0D34 0%,#0f0820 60%,#1a0b30 100%);" class="py-20">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <div class="reveal">
+      <h2 class="font-display font-extrabold text-white mb-4" style="font-size:clamp(1.75rem,5vw,2.75rem);">Ready to Write <span class="gradient-text">Your Success Story?</span></h2>
+      <p class="text-white/60 text-lg mb-8 max-w-xl mx-auto">These results are real. Let's talk about what's possible for your business — book a free strategy call and we'll audit your current marketing for free.</p>
+      <a href="https://wa.me/919999999999?text=Hi!%20I%20want%20a%20free%20strategy%20call" target="_blank" rel="noopener"
+        class="inline-flex items-center gap-3 font-bold text-base px-8 py-4 rounded-full shadow-xl"
+        style="background:#25D366;color:#fff;">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.126 1.534 5.862L.057 23.571a.75.75 0 00.918.919l5.85-1.508A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.71 9.71 0 01-5.031-1.4l-.36-.216-3.732.961.991-3.632-.235-.374A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        Get Free Strategy Call
+      </a>
+      <p class="text-white/40 text-sm mt-4">No obligation. No spam. Just a 30-min audit of your current marketing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 text-center" style="background:#1C0D34;">
+  <p class="text-white/40 text-sm">© 2025 Zyra Digital. All rights reserved.</p>
+  <a href="index.html" class="text-white/40 text-sm hover:text-white/70 transition-colors mt-1 inline-block">← Back to Home</a>
+</footer>
+
+<script>
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('nav-scrolled', window.scrollY > 60);
+  }, { passive: true });
+</script>
+</body>
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Marketing Mastery by Zyra — Learn Meta Ads, Google Ads & More</title>
+<meta name="description" content="Master Meta Ads, Google Ads, SEO, Social Media & the advanced Andromeda framework. The exact system Zyra Digital uses to generate 3–5x ROAS for clients. Enrol now for ₹10,000.">
+<link rel="canonical" href="https://zyradigital.in/course">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { DEFAULT: '#2563EB', dark: '#1D4ED8', light: '#3B82F6', navy: '#1E2A4A', 50: '#EFF6FF', 100: '#DBEAFE' },
+          gold: { DEFAULT: '#C9A84C', light: '#F0D070', dark: '#A07830', 50: '#FDF8EC' },
+        },
+        fontFamily: {
+          sans: ['"League Spartan"', 'system-ui', 'sans-serif'],
+          display: ['"League Spartan"', 'system-ui', 'sans-serif'],
+          label: ['"Plus Jakarta Sans"', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+<style>
+  * { scroll-behavior: smooth; }
+  h1, h2 { letter-spacing: -0.03em; font-family: 'League Spartan', system-ui, sans-serif; }
+  h3 { letter-spacing: -0.02em; font-family: 'League Spartan', system-ui, sans-serif; }
+  .section-label { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
+  .gradient-hero { background: linear-gradient(135deg, #0F172A 0%, #1E2A4A 55%, #1E3A8A 100%); }
+  .gradient-text { background: linear-gradient(135deg, #2563EB, #60A5FA); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .gradient-gold { background: linear-gradient(135deg, #C9A84C, #F0D070); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .gradient-cta { background: linear-gradient(135deg, #25D366, #128C7E); }
+  .gold-cta { background: linear-gradient(135deg, #C9A84C, #F0D070); }
+  .glass-card { background: rgba(255,255,255,0.06); backdrop-filter: blur(20px) saturate(1.8); -webkit-backdrop-filter: blur(20px) saturate(1.8); border: 1px solid rgba(255,255,255,0.13); }
+  .card-hover { box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(37,99,235,0.04); transition: transform 0.3s cubic-bezier(.22,1,.36,1), box-shadow 0.3s cubic-bezier(.22,1,.36,1); }
+  .card-hover:hover { transform: translateY(-4px); box-shadow: 0 4px 12px rgba(0,0,0,0.08), 0 20px 48px rgba(37,99,235,0.12); }
+  .section-divider { height: 1px; background: linear-gradient(to right, transparent, rgba(37,99,235,0.18), rgba(212,175,55,0.15), transparent); border: none; margin: 0; }
+  .hero-grain::after { content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 1; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); background-repeat: repeat; background-size: 180px 180px; mix-blend-mode: overlay; }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s cubic-bezier(.22,1,.36,1), transform 0.65s cubic-bezier(.22,1,.36,1); }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-left { opacity: 0; transform: translateX(-36px); transition: opacity 0.65s cubic-bezier(.22,1,.36,1), transform 0.65s cubic-bezier(.22,1,.36,1); }
+  .reveal-left.visible { opacity: 1; transform: translateX(0); }
+  .reveal-right { opacity: 0; transform: translateX(36px); transition: opacity 0.65s cubic-bezier(.22,1,.36,1), transform 0.65s cubic-bezier(.22,1,.36,1); }
+  .reveal-right.visible { opacity: 1; transform: translateX(0); }
+  .delay-1 { transition-delay: 0.1s; }
+  .delay-2 { transition-delay: 0.2s; }
+  .delay-3 { transition-delay: 0.3s; }
+  .delay-4 { transition-delay: 0.4s; }
+  .delay-5 { transition-delay: 0.5s; }
+  @keyframes fadeSlideUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
+  @keyframes floatBlob { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-20px) scale(1.03)} }
+  .hero-in-1 { animation: fadeSlideUp 0.7s cubic-bezier(.22,1,.36,1) 0.1s both; }
+  .hero-in-2 { animation: fadeSlideUp 0.7s cubic-bezier(.22,1,.36,1) 0.25s both; }
+  .hero-in-3 { animation: fadeSlideUp 0.7s cubic-bezier(.22,1,.36,1) 0.4s both; }
+  .hero-in-4 { animation: fadeSlideUp 0.7s cubic-bezier(.22,1,.36,1) 0.55s both; }
+  .blob { position:absolute; border-radius:50%; filter:blur(80px); pointer-events:none; }
+  .blob-gold { width:360px; height:360px; background:rgba(201,168,76,0.12); top:-60px; right:-60px; animation:floatBlob 8s ease-in-out infinite; }
+  .blob-blue { width:280px; height:280px; background:rgba(37,99,235,0.14); bottom:40px; left:-40px; animation:floatBlob 10s ease-in-out 2s infinite; }
+  .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 40; transform: translateY(100%); transition: transform 0.4s cubic-bezier(.22,1,.36,1); }
+  .sticky-cta.show { transform: translateY(0); }
+  .module-content { max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(.22,1,.36,1); }
+  .module-content.open { max-height: 500px; }
+  @media (prefers-reduced-motion: reduce) { .reveal, .reveal-left, .reveal-right, .blob, [class*="hero-in"] { animation: none; transition: none; opacity: 1; transform: none; } }
+</style>
+</head>
+<body class="font-sans bg-white text-gray-900 antialiased">
+
+<!-- ═══ NAVBAR ═══ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-4 bg-transparent">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+      <div class="w-9 h-9 rounded-xl flex items-center justify-center font-extrabold text-white text-lg" style="background:linear-gradient(135deg,#2563EB,#1E3A8A)">Z</div>
+      <div>
+        <div class="text-lg font-bold leading-none"><span class="text-brand">zyra</span> <span id="logo-dark-text" class="text-white">digital</span></div>
+        <div id="logo-tagline" class="text-xs tracking-widest" style="color:rgba(147,197,253,0.7)">Elevate Your Presence</div>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 nav-link">← Back to Agency</a>
+      <a href="#curriculum" class="text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 nav-link">Curriculum</a>
+      <a href="#instructor" class="text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 nav-link">Instructor</a>
+      <a href="#pricing" class="text-sm font-medium text-white/80 hover:text-white transition-colors duration-200 nav-link">Pricing</a>
+    </div>
+    <a href="https://wa.me/919999999999?text=Hi%20Zyra%20Digital!%20I%27d%20like%20to%20enrol%20in%20Digital%20Marketing%20Mastery" target="_blank" rel="noopener"
+       class="hidden sm:flex items-center gap-2 gold-cta text-gray-900 font-bold text-sm px-5 py-2.5 rounded-full transition-all duration-200 hover:scale-105 cursor-pointer">
+      Enrol Now — ₹10,000
+    </a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="gradient-hero hero-grain min-h-screen flex items-center relative overflow-hidden pt-24 pb-20">
+  <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+    <div class="blob blob-gold"></div>
+    <div class="blob blob-blue"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-blue-900 rounded-full opacity-20 blur-3xl"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left -->
+      <div>
+        <div class="hero-in-1 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-xs font-bold tracking-widest uppercase mb-8" style="border-color:rgba(201,168,76,0.5);color:#F0D070;background:rgba(201,168,76,0.08)">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/></svg>
+          Full Digital Marketing Course
+        </div>
+
+        <h1 class="hero-in-2 font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+          Digital Marketing<br>
+          <span class="gradient-gold">Mastery by Zyra</span>
+        </h1>
+
+        <p class="hero-in-3 text-blue-100/80 text-lg leading-relaxed mb-8 max-w-xl">
+          Learn the exact system our agency uses to generate 3–5x ROAS for clients. Meta Ads, Google Ads, SEO, Social Media, and our proprietary Andromeda growth framework — all in one course.
+        </p>
+
+        <!-- Quick stats -->
+        <div class="hero-in-3 flex flex-wrap gap-6 mb-10">
+          <div class="flex items-center gap-2 text-blue-200 text-sm">
+            <svg class="w-4 h-4" style="color:#C9A84C" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762z"/></svg>
+            5 Modules
+          </div>
+          <div class="flex items-center gap-2 text-blue-200 text-sm">
+            <svg class="w-4 h-4" style="color:#C9A84C" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Self-Paced
+          </div>
+          <div class="flex items-center gap-2 text-blue-200 text-sm">
+            <svg class="w-4 h-4" style="color:#C9A84C" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            Agency-Proven System
+          </div>
+          <div class="flex items-center gap-2 text-blue-200 text-sm">
+            <svg class="w-4 h-4" style="color:#C9A84C" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/></svg>
+            Beginners to Advanced
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="hero-in-4 flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/919999999999?text=Hi%20Zyra%20Digital!%20I%27d%20like%20to%20enrol%20in%20Digital%20Marketing%20Mastery%20for%20%E2%82%B910%2C000" target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center gap-3 gold-cta text-gray-900 font-bold text-base px-8 py-4 rounded-full shadow-xl hover:scale-105 transition-transform duration-200 cursor-pointer">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.126 1.534 5.862L.057 23.571a.75.75 0 00.918.919l5.85-1.508A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.71 9.71 0 01-5.031-1.4l-.36-.216-3.732.961.991-3.632-.235-.374A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            Enrol Now — ₹10,000
+          </a>
+          <a href="#curriculum"
+             class="inline-flex items-center justify-center gap-2 border border-white/25 text-white font-semibold text-base px-8 py-4 rounded-full hover:bg-white/10 transition-colors duration-200 cursor-pointer">
+            See Curriculum
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: price card -->
+      <div class="flex justify-center lg:justify-end">
+        <div class="glass-card rounded-3xl p-8 w-full max-w-sm">
+          <!-- Course thumbnail placeholder -->
+          <div class="rounded-2xl mb-6 flex items-center justify-center h-44 relative overflow-hidden" style="background:linear-gradient(135deg,#1E2A4A,#1E3A8A)">
+            <div class="absolute inset-0 opacity-20" style="background:radial-gradient(circle at 70% 30%, #C9A84C 0%, transparent 60%)"></div>
+            <div class="text-center relative z-10">
+              <div class="font-display text-3xl font-bold text-white mb-1">DMM</div>
+              <div class="text-blue-300 text-xs tracking-widest uppercase">by Zyra Digital</div>
+            </div>
+          </div>
+
+          <!-- Price -->
+          <div class="flex items-baseline gap-3 mb-2">
+            <span class="font-display text-4xl font-bold text-white">₹10,000</span>
+            <span class="text-blue-400/60 text-sm line-through">₹15,000</span>
+            <span class="text-xs font-bold px-2 py-1 rounded-full" style="background:rgba(201,168,76,0.15);color:#F0D070">33% OFF</span>
+          </div>
+          <p class="text-blue-300/70 text-sm mb-6">One-time payment. Lifetime access.</p>
+
+          <!-- Includes -->
+          <ul class="space-y-3 mb-7">
+            <li class="flex items-center gap-3 text-sm text-blue-100">
+              <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              5 in-depth modules
+            </li>
+            <li class="flex items-center gap-3 text-sm text-blue-100">
+              <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Lifetime access + future updates
+            </li>
+            <li class="flex items-center gap-3 text-sm text-blue-100">
+              <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Private WhatsApp community access
+            </li>
+            <li class="flex items-center gap-3 text-sm text-blue-100">
+              <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Real campaign templates & swipe files
+            </li>
+            <li class="flex items-center gap-3 text-sm text-blue-100">
+              <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Andromeda Framework (exclusive)
+            </li>
+          </ul>
+
+          <a href="https://wa.me/919999999999?text=Hi%20Zyra%20Digital!%20I%27d%20like%20to%20enrol%20in%20Digital%20Marketing%20Mastery%20for%20%E2%82%B910%2C000" target="_blank" rel="noopener"
+             class="flex items-center justify-center gap-2 w-full gold-cta text-gray-900 font-bold py-4 rounded-2xl hover:scale-105 transition-transform duration-200 cursor-pointer text-sm">
+            Enrol via WhatsApp →
+          </a>
+          <p class="text-center text-blue-400/50 text-xs mt-3">Message us to pay & get instant access</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ═══ WHO IT'S FOR ═══ -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="reveal text-center mb-14">
+      <span class="section-label inline-block bg-brand-50 text-brand px-4 py-2 rounded-full mb-4">Who Is This For</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Built for People Who Want <span class="gradient-text">Real Results</span></h2>
+      <p class="text-gray-500 text-lg max-w-2xl mx-auto">Not theory. Not generic advice. The actual playbook from an agency managing ₹2Cr+ in ad spend.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal delay-1 bg-gray-50 rounded-2xl p-7 card-hover cursor-default border border-gray-100">
+        <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Business Owners</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Want to understand your marketing so you can hold agencies accountable — or run it yourself profitably.</p>
+      </div>
+      <div class="reveal delay-2 bg-gray-50 rounded-2xl p-7 card-hover cursor-default border border-gray-100">
+        <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        </div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Aspiring Marketers</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Want to build a career in digital marketing with skills that get you hired or help you land freelance clients.</p>
+      </div>
+      <div class="reveal delay-3 bg-gray-50 rounded-2xl p-7 card-hover cursor-default border border-gray-100">
+        <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Freelancers & Consultants</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Want to offer full-stack digital marketing services to clients — and actually know what you're doing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ═══ CURRICULUM ═══ -->
+<section id="curriculum" class="py-20 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="reveal text-center mb-14">
+      <span class="section-label inline-block bg-brand-50 text-brand px-4 py-2 rounded-full mb-4">Full Curriculum</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Everything You'll <span class="gradient-text">Master</span></h2>
+      <p class="text-gray-500 text-lg">5 modules. Agency-grade depth. Zero fluff.</p>
+    </div>
+
+    <div class="space-y-4" id="curriculum-container">
+
+      <!-- Module 1 -->
+      <div class="reveal delay-1 bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <button class="module-btn w-full flex items-center justify-between p-7 text-left cursor-pointer" aria-expanded="false">
+          <div class="flex items-center gap-5">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 font-bold text-sm" style="background:linear-gradient(135deg,#C9A84C22,#C9A84C44);color:#C9A84C">01</div>
+            <div>
+              <div class="font-bold text-gray-900 text-base">Meta Ads Mastery</div>
+              <div class="text-gray-400 text-sm mt-0.5">6 lessons · Beginner to Advanced</div>
+            </div>
+          </div>
+          <svg class="module-icon w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="module-content px-7 pb-6">
+          <ul class="space-y-3 border-t border-gray-100 pt-5">
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Meta Business Manager setup & structure</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Audience research, targeting & lookalikes</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Creative strategy — what works in 2025</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Campaign scaling without killing ROAS</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Pixel setup, retargeting & conversion events</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Reading data & optimising for profit</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Module 2 -->
+      <div class="reveal delay-2 bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <button class="module-btn w-full flex items-center justify-between p-7 text-left cursor-pointer" aria-expanded="false">
+          <div class="flex items-center gap-5">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 font-bold text-sm" style="background:linear-gradient(135deg,#2563EB22,#2563EB44);color:#2563EB">02</div>
+            <div>
+              <div class="font-bold text-gray-900 text-base">Google Ads Pro</div>
+              <div class="text-gray-400 text-sm mt-0.5">6 lessons · Search, Display & PMax</div>
+            </div>
+          </div>
+          <svg class="module-icon w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="module-content px-7 pb-6">
+          <ul class="space-y-3 border-t border-gray-100 pt-5">
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Google Ads account structure & campaign types</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Keyword research & match types mastery</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Writing high-CTR search ads that convert</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Performance Max campaigns — setup & optimisation</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Smart bidding strategies & ROAS targets</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Analytics, conversion tracking & reporting</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Module 3 -->
+      <div class="reveal delay-3 bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <button class="module-btn w-full flex items-center justify-between p-7 text-left cursor-pointer" aria-expanded="false">
+          <div class="flex items-center gap-5">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 font-bold text-sm" style="background:rgba(16,185,129,0.12);color:#10B981">03</div>
+            <div>
+              <div class="font-bold text-gray-900 text-base">SEO & Content Strategy</div>
+              <div class="text-gray-400 text-sm mt-0.5">5 lessons · Rank & drive organic traffic</div>
+            </div>
+          </div>
+          <svg class="module-icon w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="module-content px-7 pb-6">
+          <ul class="space-y-3 border-t border-gray-100 pt-5">
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>On-page & technical SEO fundamentals</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Keyword research that drives buyer-intent traffic</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Content marketing & blog strategy</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Link building & domain authority growth</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Google Search Console & SEO measurement</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Module 4 -->
+      <div class="reveal delay-4 bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <button class="module-btn w-full flex items-center justify-between p-7 text-left cursor-pointer" aria-expanded="false">
+          <div class="flex items-center gap-5">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 font-bold text-sm" style="background:rgba(139,92,246,0.12);color:#8B5CF6">04</div>
+            <div>
+              <div class="font-bold text-gray-900 text-base">Social Media Growth</div>
+              <div class="text-gray-400 text-sm mt-0.5">5 lessons · Instagram, LinkedIn & beyond</div>
+            </div>
+          </div>
+          <svg class="module-icon w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="module-content px-7 pb-6">
+          <ul class="space-y-3 border-t border-gray-100 pt-5">
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Brand positioning & profile optimisation</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Content calendar & viral content frameworks</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Reels, Shorts & short-form video strategy</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Community building & engagement tactics</li>
+            <li class="flex items-start gap-3 text-sm text-gray-600"><svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Analytics & tracking social ROI</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Module 5 -->
+      <div class="reveal delay-5 rounded-2xl overflow-hidden border" style="background:linear-gradient(135deg,#0F172A,#1E2A4A);border-color:rgba(201,168,76,0.3)">
+        <button class="module-btn w-full flex items-center justify-between p-7 text-left cursor-pointer" aria-expanded="false">
+          <div class="flex items-center gap-5">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 font-bold text-sm gold-cta text-gray-900">05</div>
+            <div>
+              <div class="font-bold text-white text-base">Andromeda Growth Framework</div>
+              <div class="text-sm mt-0.5" style="color:rgba(201,168,76,0.8)">Advanced · Exclusive to this course</div>
+            </div>
+          </div>
+          <svg class="module-icon w-5 h-5 transition-transform duration-300 flex-shrink-0" style="color:rgba(201,168,76,0.7)" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="module-content px-7 pb-6">
+          <ul class="space-y-3 border-t pt-5" style="border-color:rgba(201,168,76,0.2)">
+            <li class="flex items-start gap-3 text-sm text-blue-200"><svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>The Andromeda full-funnel growth system</li>
+            <li class="flex items-start gap-3 text-sm text-blue-200"><svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Multi-channel attribution & budget allocation</li>
+            <li class="flex items-start gap-3 text-sm text-blue-200"><svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Scaling from ₹10K to ₹1L+ ad spend profitably</li>
+            <li class="flex items-start gap-3 text-sm text-blue-200"><svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Advanced retargeting architecture</li>
+            <li class="flex items-start gap-3 text-sm text-blue-200"><svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Proprietary reporting dashboards used by Zyra</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ═══ INSTRUCTOR ═══ -->
+<section id="instructor" class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="reveal grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="section-label inline-block bg-brand-50 text-brand px-4 py-2 rounded-full mb-6">Your Instructor</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Taught by the <span class="gradient-text">Agency Itself</span></h2>
+        <p class="text-gray-500 text-base leading-relaxed mb-6">This isn't a course built by a blogger or a YouTube personality. Every lesson comes directly from Zyra Digital's active client work — the same strategies we use every day to manage ₹2Cr+ in ad spend across 50+ businesses.</p>
+        <div class="grid grid-cols-2 gap-4 mb-8">
+          <div class="bg-gray-50 rounded-xl p-4 text-center">
+            <div class="font-display text-2xl font-bold text-brand mb-1">50+</div>
+            <div class="text-gray-500 text-xs">Businesses Grown</div>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-4 text-center">
+            <div class="font-display text-2xl font-bold text-brand mb-1">₹2Cr+</div>
+            <div class="text-gray-500 text-xs">Ad Spend Managed</div>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-4 text-center">
+            <div class="font-display text-2xl font-bold text-brand mb-1">3.8x</div>
+            <div class="text-gray-500 text-xs">Average ROAS</div>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-4 text-center">
+            <div class="font-display text-2xl font-bold text-brand mb-1">4+</div>
+            <div class="text-gray-500 text-xs">Years in Business</div>
+          </div>
+        </div>
+        <a href="index.html" class="inline-flex items-center gap-2 text-brand font-semibold text-sm hover:underline cursor-pointer">
+          See Zyra Digital's client results →
+        </a>
+      </div>
+      <div class="flex justify-center">
+        <div class="relative">
+          <div class="w-64 h-64 sm:w-72 sm:h-72 bg-brand-50 rounded-3xl flex items-center justify-center relative overflow-hidden border-2 border-brand-100">
+            <svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" aria-label="Zyra Digital instructor" role="img">
+              <rect width="280" height="280" fill="#EFF6FF"/>
+              <ellipse cx="140" cy="230" rx="70" ry="50" fill="#1E2A4A"/>
+              <ellipse cx="140" cy="105" rx="45" ry="48" fill="#FBBF24"/>
+              <ellipse cx="140" cy="108" rx="38" ry="40" fill="#FDE68A"/>
+              <ellipse cx="124" cy="100" rx="6" ry="7" fill="#1E2A4A"/>
+              <ellipse cx="156" cy="100" rx="6" ry="7" fill="#1E2A4A"/>
+              <ellipse cx="126" cy="99" rx="2.5" ry="3" fill="#fff"/>
+              <ellipse cx="158" cy="99" rx="2.5" ry="3" fill="#fff"/>
+              <path d="M128 120 Q140 132 152 120" stroke="#1E2A4A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <ellipse cx="140" cy="60" rx="46" ry="22" fill="#1E2A4A"/>
+              <rect x="95" y="45" width="90" height="20" rx="10" fill="#1E2A4A"/>
+            </svg>
+          </div>
+          <!-- Gold accent dot -->
+          <div class="absolute -bottom-3 -right-3 w-16 h-16 rounded-2xl flex items-center justify-center gold-cta shadow-lg">
+            <svg class="w-7 h-7 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ═══ PRICING ═══ -->
+<section id="pricing" class="py-20 gradient-hero hero-grain relative overflow-hidden">
+  <div class="absolute inset-0" aria-hidden="true">
+    <div class="blob blob-gold"></div>
+    <div class="blob blob-blue"></div>
+  </div>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="reveal">
+      <span class="section-label inline-block bg-white/5 border px-4 py-2 rounded-full mb-6" style="border-color:rgba(201,168,76,0.45);color:#F0D070">Enrol Today</span>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold text-white mb-4">One Price.<br><span class="gradient-gold">Lifetime Access.</span></h2>
+      <p class="text-blue-200/70 text-lg mb-12">No subscriptions. No hidden fees. Pay once, learn forever.</p>
+    </div>
+
+    <div class="reveal glass-card rounded-3xl p-10 max-w-lg mx-auto">
+      <div class="flex items-baseline justify-center gap-3 mb-2">
+        <span class="font-display text-6xl font-bold text-white">₹10,000</span>
+      </div>
+      <div class="flex items-center justify-center gap-3 mb-8">
+        <span class="text-blue-400/60 text-base line-through">₹15,000</span>
+        <span class="text-xs font-bold px-3 py-1.5 rounded-full" style="background:rgba(201,168,76,0.15);color:#F0D070">Save ₹5,000</span>
+      </div>
+
+      <ul class="space-y-4 mb-10 text-left">
+        <li class="flex items-center gap-3 text-blue-100 text-sm"><svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>All 5 modules — 28 lessons total</li>
+        <li class="flex items-center gap-3 text-blue-100 text-sm"><svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Lifetime access + all future updates</li>
+        <li class="flex items-center gap-3 text-blue-100 text-sm"><svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Private WhatsApp student community</li>
+        <li class="flex items-center gap-3 text-blue-100 text-sm"><svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Campaign templates & swipe files</li>
+        <li class="flex items-center gap-3 text-blue-100 text-sm"><svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style="color:#C9A84C"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Exclusive Andromeda Framework (Module 5)</li>
+      </ul>
+
+      <a href="https://wa.me/919999999999?text=Hi%20Zyra%20Digital!%20I%27d%20like%20to%20enrol%20in%20Digital%20Marketing%20Mastery%20for%20%E2%82%B910%2C000" target="_blank" rel="noopener"
+         class="flex items-center justify-center gap-3 w-full gold-cta text-gray-900 font-bold text-base py-4 rounded-2xl hover:scale-105 transition-transform duration-200 cursor-pointer mb-4">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.126 1.534 5.862L.057 23.571a.75.75 0 00.918.919l5.85-1.508A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.71 9.71 0 01-5.031-1.4l-.36-.216-3.732.961.991-3.632-.235-.374A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        Enrol Now via WhatsApp
+      </a>
+      <p class="text-blue-400/50 text-xs text-center">Message us on WhatsApp to pay & get instant access</p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="bg-gray-900 text-gray-400 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+    <div>
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center font-extrabold text-white text-sm" style="background:linear-gradient(135deg,#2563EB,#1E3A8A)">Z</div>
+        <span class="text-white font-bold">Zyra Digital</span>
+      </div>
+      <p class="text-xs text-gray-600">Digital Marketing Mastery · ₹10,000 · Lifetime Access</p>
+    </div>
+    <div class="flex items-center gap-6 text-sm">
+      <a href="index.html" class="hover:text-white transition-colors duration-200 cursor-pointer">← Agency Services</a>
+      <a href="#curriculum" class="hover:text-white transition-colors duration-200 cursor-pointer">Curriculum</a>
+      <a href="https://wa.me/919999999999" target="_blank" rel="noopener" class="hover:text-white transition-colors duration-200 cursor-pointer">Enrol</a>
+    </div>
+    <p class="text-xs text-gray-600">&copy; 2025 Zyra Digital. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Sticky enrol bar (appears on scroll) -->
+<div id="sticky-cta" class="sticky-cta bg-gray-900 border-t border-gray-800 px-4 py-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+    <div class="hidden sm:block">
+      <div class="text-white font-bold text-sm">Digital Marketing Mastery by Zyra</div>
+      <div class="text-gray-400 text-xs">5 modules · Lifetime access · ₹10,000</div>
+    </div>
+    <a href="https://wa.me/919999999999?text=Hi%20Zyra%20Digital!%20I%27d%20like%20to%20enrol%20in%20Digital%20Marketing%20Mastery%20for%20%E2%82%B910%2C000" target="_blank" rel="noopener"
+       class="flex items-center gap-2 gold-cta text-gray-900 font-bold text-sm px-6 py-3 rounded-full hover:scale-105 transition-transform duration-200 cursor-pointer w-full sm:w-auto justify-center">
+      Enrol Now — ₹10,000
+    </a>
+  </div>
+</div>
+
+<script>
+  // Navbar scroll
+  const navbar = document.getElementById('navbar');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const logoTagline = document.getElementById('logo-tagline');
+  const logoDarkText = document.getElementById('logo-dark-text');
+  logoDarkText.style.color = '#FFFFFF';
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      navbar.classList.add('bg-white/95', 'shadow-sm');
+      navbar.classList.remove('bg-transparent');
+      navbar.style.backdropFilter = 'blur(12px)';
+      navLinks.forEach(l => { l.style.color = '#374151'; });
+      logoDarkText.style.color = '#1E2A4A';
+      logoTagline.style.color = '#6B7280';
+    } else {
+      navbar.classList.remove('bg-white/95', 'shadow-sm');
+      navbar.style.backdropFilter = '';
+      navLinks.forEach(l => { l.style.color = 'rgba(255,255,255,0.8)'; });
+      logoDarkText.style.color = '#FFFFFF';
+      logoTagline.style.color = 'rgba(147,197,253,0.7)';
+    }
+  });
+
+  // Sticky CTA bar
+  const stickyCta = document.getElementById('sticky-cta');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 600) stickyCta.classList.add('show');
+    else stickyCta.classList.remove('show');
+  });
+
+  // Scroll-reveal
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => revealObs.observe(el));
+
+  // Module accordion
+  document.querySelectorAll('.module-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.module-icon');
+      const isOpen = content.classList.contains('open');
+      document.querySelectorAll('.module-content').forEach(c => c.classList.remove('open'));
+      document.querySelectorAll('.module-icon').forEach(i => i.style.transform = '');
+      document.querySelectorAll('.module-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+      if (!isOpen) {
+        content.classList.add('open');
+        icon.style.transform = 'rotate(180deg)';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+</body>
+</html>
