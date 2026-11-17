@@ -123,21 +123,22 @@ export default function CoursePage() {
             <div>
               <div className="hero-in-1 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-xs font-bold tracking-widest uppercase mb-8" style={{ borderColor: 'rgba(201,168,76,0.5)', color: '#F0D070', background: 'rgba(201,168,76,0.08)' }}>
                 <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" /></svg>
-                Full Digital Marketing Course
+                Live Online Program
               </div>
               <h1 className="hero-in-2 font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-                Digital Marketing<br />
-                <span className="gradient-gold">Mastery by Zyra</span>
+                Become an AI Performance<br />
+                <span className="gradient-gold">Marketer in Just a Month</span>
               </h1>
               <p className="hero-in-3 text-blue-100/80 text-lg leading-relaxed mb-8 max-w-xl">
-                Learn the exact system our agency uses to generate 3–5x ROAS for clients. Meta Ads, Google Ads, SEO, Social Media, and our proprietary Andromeda growth framework — all in one course.
+                Learn the exact system our agency uses to generate 15–20x ROAS for clients. Meta Ads, Google Ads, Social Media, and our proprietary Andromeda growth framework — all in one course.
               </p>
               <div className="hero-in-3 flex flex-wrap gap-6 mb-10">
                 {[
-                  { label: '5 Modules' },
-                  { label: 'Self-Paced' },
-                  { label: 'Agency-Proven System' },
-                  { label: 'Beginners to Advanced' },
+                  { label: '14 Modules' },
+                  { label: 'How to Get Clients Strategy' },
+                  { label: 'Our Own Clients Strategy' },
+                  { label: 'Smarter Learning with AI' },
+                  { label: 'Lifetime Community Access' },
                 ].map(item => (
                   <div key={item.label} className="flex items-center gap-2 text-blue-200 text-sm">
                     <svg className="w-4 h-4" style={{ color: '#C9A84C' }} fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z" /></svg>
