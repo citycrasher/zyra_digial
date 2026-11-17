@@ -6,6 +6,7 @@ import EarlySocialProof from '@/components/EarlySocialProof'
 import PainPoints from '@/components/PainPoints'
 import Services from '@/components/Services'
 import Results from '@/components/Results'
+import ClientResults from '@/components/ClientResults'
 import Partners from '@/components/Partners'
 import OldVsZyra from '@/components/OldVsZyra'
 import About from '@/components/About'
@@ -34,6 +35,8 @@ export default function Home() {
       <Services />
       <hr className="section-divider" />
       <Results />
+      <hr className="section-divider" />
+      <ClientResults />
       <Partners />
       <hr className="section-divider" />
       <OldVsZyra />
