@@ -11,6 +11,8 @@ import OldVsZyra from '@/components/OldVsZyra'
 import About from '@/components/About'
 import Process from '@/components/Process'
 import Testimonials from '@/components/Testimonials'
+import Certifications from '@/components/Certifications'
+import CaseStudies from '@/components/CaseStudies'
 import FAQ from '@/components/FAQ'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
@@ -40,6 +42,10 @@ export default function Home() {
       <Process />
       <hr className="section-divider" />
       <Testimonials />
+      <hr className="section-divider" />
+      <Certifications />
+      <hr className="section-divider" />
+      <CaseStudies />
       <hr className="section-divider" />
       <FAQ />
       <CTASection />

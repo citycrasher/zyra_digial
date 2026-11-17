@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-brand: #2563EB;
-  --color-brand-dark: #1D4ED8;
-  --color-brand-light: #3B82F6;
-  --color-brand-navy: #1E2A4A;
-  --color-brand-50: #EFF6FF;
-  --color-brand-100: #DBEAFE;
+  --color-brand: #1C0D34;
+  --color-brand-dark: #120825;
+  --color-brand-light: #3D1F6E;
+  --color-brand-navy: #1C0D34;
+  --color-brand-50: #F3EEFF;
+  --color-brand-100: #E0D0FF;
+  --color-accent: #DDB5F4;
   --color-gold: #C9A84C;
   --color-gold-light: #F0D070;
   --color-gold-dark: #A07830;
@@ -17,10 +18,10 @@
 }
 
 * { scroll-behavior: smooth; }
-.gradient-hero { background: linear-gradient(135deg, #0F172A 0%, #1E2A4A 50%, #1E3A8A 100%); }
-.gradient-text { background: linear-gradient(135deg, #2563EB, #60A5FA); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.gradient-hero { background: #1C0D34; }
+.gradient-text { background: linear-gradient(135deg, #DDB5F4, #9333EA); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 :root {
-  --t-display: clamp(3rem, 6vw, 4.5rem);
+  --t-display: clamp(2rem, 8vw, 4.5rem);
   --t-heading: clamp(2rem, 4vw, 3rem);
   --t-sub:     1.375rem;
   --t-body:    1rem;
@@ -39,7 +40,7 @@ h1, h2 { letter-spacing: -0.03em; font-family: 'League Spartan', system-ui, sans
 h3 { letter-spacing: -0.02em; font-family: 'League Spartan', system-ui, sans-serif; }
 
 .section-label { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
-.service-num { font-family: 'League Spartan', sans-serif; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; color: rgba(37,99,235,0.35); }
+.service-num { font-family: 'League Spartan', sans-serif; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; color: rgba(28,13,52,0.35); }
 
 .hero-grain::after {
   content: '';
@@ -49,12 +50,12 @@ h3 { letter-spacing: -0.02em; font-family: 'League Spartan', system-ui, sans-ser
 }
 
 .card-hover {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(37,99,235,0.04);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(28,13,52,0.04);
   transition: transform 0.3s cubic-bezier(.22,1,.36,1), box-shadow 0.3s cubic-bezier(.22,1,.36,1);
 }
 .card-hover:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08), 0 20px 48px rgba(37,99,235,0.13), 0 0 0 1px rgba(37,99,235,0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08), 0 20px 48px rgba(28,13,52,0.13), 0 0 0 1px rgba(28,13,52,0.06);
 }
 
 .glass-card {
@@ -66,29 +67,29 @@ h3 { letter-spacing: -0.02em; font-family: 'League Spartan', system-ui, sans-ser
 
 .section-divider {
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(37,99,235,0.18), rgba(212,175,55,0.15), transparent);
+  background: linear-gradient(to right, transparent, rgba(28,13,52,0.18), rgba(212,175,55,0.15), transparent);
   border: none; margin: 0;
 }
-.dark-section { background: #07101F; }
-.dark-section-mid { background: #0B1526; }
+.dark-section { background: #1C0D34; }
+.dark-section-mid { background: #1C0D34; }
 
 .premium-card {
   background: #ffffff;
   border: 1px solid rgba(0,0,0,0.07);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 8px 28px rgba(37,99,235,0.05);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 8px 28px rgba(28,13,52,0.05);
   transition: transform 0.3s cubic-bezier(.22,1,.36,1), box-shadow 0.3s cubic-bezier(.22,1,.36,1);
 }
 .premium-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.07), 0 16px 48px rgba(37,99,235,0.09);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07), 0 16px 48px rgba(28,13,52,0.09);
 }
 
 .hero-mesh::before {
   content: '';
   position: absolute; inset: 0; pointer-events: none; z-index: 0;
   background-image:
-    linear-gradient(rgba(37,99,235,0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(37,99,235,0.08) 1px, transparent 1px);
+    linear-gradient(rgba(28,13,52,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28,13,52,0.08) 1px, transparent 1px);
   background-size: 44px 44px;
   mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
@@ -115,27 +116,38 @@ h3 { letter-spacing: -0.02em; font-family: 'League Spartan', system-ui, sans-ser
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s cubic-bezier(.22,1,.36,1);
 }
 .service-card-dark:hover {
-  background: rgba(37,99,235,0.08);
-  border-color: rgba(37,99,235,0.4);
-  box-shadow: 0 0 0 1px rgba(37,99,235,0.15), 0 8px 40px rgba(37,99,235,0.12);
+  background: rgba(28,13,52,0.08);
+  border-color: rgba(28,13,52,0.4);
+  box-shadow: 0 0 0 1px rgba(28,13,52,0.15), 0 8px 40px rgba(28,13,52,0.12);
   transform: translateY(-4px);
 }
 
 .bridge-dark {
-  background: rgba(37,99,235,0.08);
-  border: 1px solid rgba(37,99,235,0.25);
+  background: rgba(28,13,52,0.08);
+  border: 1px solid rgba(28,13,52,0.25);
   backdrop-filter: blur(12px);
 }
 
 .pain-card { border-left: 4px solid #EF4444; }
-.solution-card { border-left: 4px solid #2563EB; }
+.solution-card { border-left: 4px solid #1C0D34; }
 .floating-wa { animation: pulse-wa 2s infinite; }
 @keyframes pulse-wa { 0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.4)} 70%{box-shadow:0 0 0 12px rgba(37,211,102,0)} }
 .stat-number { font-variant-numeric: tabular-nums; }
-.nav-scrolled { background: rgba(7,16,31,0.92); backdrop-filter: blur(20px) saturate(1.5); box-shadow: 0 1px 0 rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
+.nav-scrolled { background: rgba(28,13,52,0.92); backdrop-filter: blur(20px) saturate(1.5); box-shadow: 0 1px 0 rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
 .marquee-track { display: flex; gap: 3rem; animation: marquee 28s linear infinite; }
 .marquee-track:hover { animation-play-state: paused; }
 @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.marquee-track-rtl { display: flex; gap: 3rem; animation: marquee-rtl 32s linear infinite; }
+.marquee-track-rtl:hover { animation-play-state: paused; }
+@keyframes marquee-rtl { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
+.testimonials-grid { grid-template-columns: repeat(3,1fr) !important; }
+@media (max-width: 1023px) { .testimonials-grid { grid-template-columns: repeat(2,1fr) !important; } }
+@media (max-width: 639px) { .testimonials-grid { grid-template-columns: 1fr !important; } }
+.cert-grid { grid-template-columns: repeat(3,1fr) !important; }
+@media (max-width: 1023px) { .cert-grid { grid-template-columns: repeat(2,1fr) !important; } }
+@media (max-width: 639px) { .cert-grid { grid-template-columns: 1fr !important; } }
+.cert-grid-2 { grid-template-columns: repeat(2,1fr) !important; }
+@media (max-width: 639px) { .cert-grid-2 { grid-template-columns: 1fr !important; } }
 
 .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.65s cubic-bezier(.22,1,.36,1), transform 0.65s cubic-bezier(.22,1,.36,1); }
 .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -165,7 +177,7 @@ h3 { letter-spacing: -0.02em; font-family: 'League Spartan', system-ui, sans-ser
 .hero-cards  { animation: scaleIn 0.8s cubic-bezier(.22,1,.36,1) 0.5s both; }
 
 .blob { position:absolute; border-radius:50%; filter:blur(80px); pointer-events:none; }
-.blob-1 { width:420px; height:420px; background:rgba(37,99,235,0.18); top:-80px; right:-80px; animation:floatBlob 7s ease-in-out infinite; }
+.blob-1 { width:420px; height:420px; background:rgba(28,13,52,0.18); top:-80px; right:-80px; animation:floatBlob 7s ease-in-out infinite; }
 .blob-2 { width:300px; height:300px; background:rgba(96,165,250,0.12); bottom:60px; left:-60px; animation:floatBlob 9s ease-in-out 1.5s infinite; }
 .blob-3 { width:200px; height:200px; background:rgba(99,102,241,0.1); top:40%; right:10%; animation:floatBlob 11s ease-in-out 3s infinite; }
 
@@ -178,16 +190,16 @@ h3 { letter-spacing: -0.02em; font-family: 'League Spartan', system-ui, sans-ser
   transition: transform 0.3s cubic-bezier(.22,1,.36,1), box-shadow 0.3s cubic-bezier(.22,1,.36,1), border-color 0.3s ease;
 }
 .card-dark {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.09);
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.15);
 }
 .card-dark:hover {
-  border-color: rgba(37,99,235,0.4);
-  box-shadow: 0 12px 48px rgba(37,99,235,0.14);
+  border-color: rgba(221,181,244,0.4);
+  box-shadow: 0 12px 48px rgba(0,0,0,0.3);
   transform: translateY(-3px);
 }
 .card-accent {
-  background: rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.05);
   border: 1px solid rgba(239,68,68,0.16);
   border-left: 3px solid rgba(239,68,68,0.65);
 }
@@ -197,17 +209,17 @@ h3 { letter-spacing: -0.02em; font-family: 'League Spartan', system-ui, sans-ser
   transform: translateY(-3px);
 }
 .card-featured {
-  background: linear-gradient(135deg, #1B2744 0%, #1E3A8A 100%);
-  border: 1px solid rgba(37,99,235,0.35);
-  box-shadow: 0 8px 40px rgba(37,99,235,0.18);
+  background: linear-gradient(135deg, #2D1654 0%, #3D1F6E 100%);
+  border: 1px solid rgba(221,181,244,0.25);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.3);
 }
-.card-featured:hover { transform: translateY(-3px); box-shadow: 0 16px 56px rgba(37,99,235,0.25); }
+.card-featured:hover { transform: translateY(-3px); box-shadow: 0 16px 56px rgba(0,0,0,0.4); }
 .card-light {
   background: #ffffff;
   border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 8px 28px rgba(37,99,235,0.05);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 8px 28px rgba(28,13,52,0.05);
 }
-.card-light:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07), 0 16px 48px rgba(37,99,235,0.09); transform: translateY(-3px); }
+.card-light:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07), 0 16px 48px rgba(28,13,52,0.09); transform: translateY(-3px); }
 
 .card-3d { transform-style: preserve-3d; will-change: transform; }
 
@@ -228,8 +240,12 @@ h3 { letter-spacing: -0.02em; font-family: 'League Spartan', system-ui, sans-ser
   .pg-grid-4 { grid-template-columns: repeat(4, 1fr); }
 }
 
+@media (min-width: 640px) {
+  :root { --t-display: clamp(2.5rem, 6vw, 4.5rem); }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .floating-wa, .card-hover, .marquee-track, .blob,
+  .floating-wa, .card-hover, .marquee-track, .marquee-track-rtl, .blob,
   .hero-line-1, .hero-line-2, .hero-line-3, .hero-cta, .hero-stats, .hero-cards { animation: none; transition: none; }
   .reveal, .reveal-left, .reveal-right, .reveal-scale { opacity:1; transform:none; transition:none; }
 }
