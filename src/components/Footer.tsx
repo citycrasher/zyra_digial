@@ -1,21 +1,12 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-16">
+    <footer className="text-gray-400 py-16" style={{ background: '#120825' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-4">
-              <svg width="40" height="32" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M2 4L18 4L2 20H18" stroke="#2563EB" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M24 4H36C40.4183 4 44 7.58172 44 12V12C44 16.4183 40.4183 20 36 20H24V4Z" fill="#1E2A4A"/>
-                <path d="M28 10V14M32 8V16M36 11V13" stroke="#2563EB" strokeWidth="2" strokeLinecap="round"/>
-                <path d="M30 14L38 8" stroke="#2563EB" strokeWidth="2" strokeLinecap="round"/>
-              </svg>
-              <div className="ml-2">
-                <div className="text-lg font-bold leading-none text-white"><span className="text-brand">zyra</span> digital</div>
-                <div className="text-xs tracking-widest text-gray-500">Elevate Your Presence</div>
-              </div>
+              <img src="/logo.png" alt="Zyra Digital" style={{ height: '40px', width: 'auto', objectFit: 'contain' }} />
             </div>
             <p className="text-sm leading-relaxed max-w-sm mb-5">We help entrepreneurs and business owners grow their revenue through data-driven digital marketing. Real strategy. Real results.</p>
             <div className="space-y-2 mb-5">

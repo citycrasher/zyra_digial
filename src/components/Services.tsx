@@ -7,7 +7,7 @@ const CheckIcon = ({ size = 4 }: { size?: number }) => (
 export default function Services() {
   return (
     <section id="services" className="py-16 dark-section-mid relative overflow-hidden">
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-64 pointer-events-none" style={{ background: 'radial-gradient(ellipse, rgba(37,99,235,0.07) 0%, transparent 70%)' }}></div>
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-64 pointer-events-none" style={{ background: 'radial-gradient(ellipse, rgba(28,13,52,0.07) 0%, transparent 70%)' }}></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="reveal text-center mb-16">
           <span className="section-label inline-block bg-brand/10 border border-brand/25 text-blue-400 px-4 py-2 rounded-full mb-4">What We Do</span>
@@ -26,7 +26,7 @@ export default function Services() {
           <div className="reveal delay-1 card card-3d card-featured p-8 cursor-default pg-span-2">
             <div className="bento-content h-full flex flex-col justify-between">
               <div>
-                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6" style={{ background: 'rgba(37,99,235,0.2)' }}>
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6" style={{ background: 'rgba(28,13,52,0.2)' }}>
                   <svg className="w-7 h-7 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
                 </div>
                 <h3 className="font-bold text-2xl text-white mb-3">Meta Ads (Facebook &amp; Instagram)</h3>
@@ -47,7 +47,7 @@ export default function Services() {
           {/* Service 2 */}
           <div className="reveal delay-2 card card-3d card-dark p-7 cursor-default">
             <div className="bento-content">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'rgba(37,99,235,0.15)' }}>
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'rgba(28,13,52,0.15)' }}>
                 <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
               </div>
               <h3 className="font-bold text-lg text-white mb-2">Google Ads</h3>
@@ -62,7 +62,7 @@ export default function Services() {
           {/* Service 3 */}
           <div className="reveal delay-3 card card-3d card-dark p-7 cursor-default">
             <div className="bento-content">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'rgba(37,99,235,0.15)' }}>
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'rgba(28,13,52,0.15)' }}>
                 <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/></svg>
               </div>
               <h3 className="font-bold text-lg text-white mb-2">SEO &amp; Content</h3>
@@ -77,7 +77,7 @@ export default function Services() {
           {/* Service 4 */}
           <div className="reveal delay-4 card card-3d card-dark p-7 cursor-default">
             <div className="bento-content">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'rgba(37,99,235,0.15)' }}>
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'rgba(28,13,52,0.15)' }}>
                 <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
               </div>
               <h3 className="font-bold text-lg text-white mb-2">Social Media</h3>
@@ -92,7 +92,7 @@ export default function Services() {
           {/* Service 5 */}
           <div className="reveal delay-5 card card-3d card-dark p-7 cursor-default">
             <div className="bento-content">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'rgba(37,99,235,0.15)' }}>
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'rgba(28,13,52,0.15)' }}>
                 <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
               </div>
               <h3 className="font-bold text-lg text-white mb-2">Web Design</h3>
@@ -108,7 +108,7 @@ export default function Services() {
           <div className="card card-3d card-featured p-8 cursor-default pg-span-2">
             <div className="bento-content flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between h-full">
               <div>
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'rgba(37,99,235,0.3)' }}>
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'rgba(28,13,52,0.3)' }}>
                   <svg className="w-6 h-6 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                 </div>
                 <h3 className="font-bold text-xl text-white mb-2">Full-Stack Digital Growth</h3>

@@ -40,7 +40,7 @@ export default function CoursePage() {
       dark: false,
     },
     {
-      num: '02', color: 'rgba(37,99,235,0.22)', textColor: '#2563EB',
+      num: '02', color: 'rgba(28,13,52,0.22)', textColor: '#1C0D34',
       title: 'Google Ads Pro', sub: '6 lessons · Search, Display & PMax',
       lessons: ['Google Ads account structure & campaign types','Keyword research & match types mastery','Writing high-CTR search ads that convert','Performance Max campaigns — setup & optimisation','Smart bidding strategies & ROAS targets','Analytics, conversion tracking & reporting'],
       dark: false,
@@ -66,7 +66,7 @@ export default function CoursePage() {
   ]
 
   const CheckIcon = ({ gold = false }: { gold?: boolean }) => (
-    <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style={gold ? { color: '#C9A84C' } : { color: '#2563EB' }}>
+    <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style={gold ? { color: '#C9A84C' } : { color: '#1C0D34' }}>
       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
     </svg>
   )
@@ -88,7 +88,7 @@ export default function CoursePage() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 cursor-pointer">
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center font-extrabold text-white text-lg" style={{ background: 'linear-gradient(135deg,#2563EB,#1E3A8A)' }}>Z</div>
+            <div className="w-9 h-9 rounded-xl flex items-center justify-center font-extrabold text-white text-lg" style={{ background: 'linear-gradient(135deg,#1C0D34,#1E3A8A)' }}>Z</div>
             <div>
               <div className="text-lg font-bold leading-none">
                 <span className="text-brand">zyra</span>{' '}
@@ -366,7 +366,7 @@ export default function CoursePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center font-extrabold text-white text-sm" style={{ background: 'linear-gradient(135deg,#2563EB,#1E3A8A)' }}>Z</div>
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center font-extrabold text-white text-sm" style={{ background: 'linear-gradient(135deg,#1C0D34,#1E3A8A)' }}>Z</div>
               <span className="text-white font-bold">Zyra Digital</span>
             </div>
             <p className="text-xs text-gray-600">Digital Marketing Mastery · ₹10,000 · Lifetime Access</p>

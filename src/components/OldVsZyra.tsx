@@ -42,7 +42,7 @@ export default function OldVsZyra() {
           </div>
 
           {/* Zyra Way */}
-          <div className="card-light rounded-2xl p-8" style={{ border: '2px solid #2563EB', boxShadow: '0 4px 24px rgba(37,99,235,0.12)' }}>
+          <div className="card-light rounded-2xl p-8" style={{ border: '2px solid #1C0D34', boxShadow: '0 4px 24px rgba(28,13,52,0.12)' }}>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-brand rounded-full flex items-center justify-center">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>

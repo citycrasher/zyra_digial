@@ -15,13 +15,13 @@ export default function About() {
             <div className="relative">
               <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-3xl relative overflow-hidden" style={{ background: 'linear-gradient(135deg,#0F172A 0%,#1E2A4A 60%,#1E3A8A 100%)' }}>
                 {/* Mesh grid */}
-                <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(37,99,235,0.1) 1px,transparent 1px),linear-gradient(90deg,rgba(37,99,235,0.1) 1px,transparent 1px)', backgroundSize: '32px 32px', maskImage: 'radial-gradient(ellipse 90% 90% at 50% 50%,black 40%,transparent 100%)' }}></div>
+                <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(28,13,52,0.1) 1px,transparent 1px),linear-gradient(90deg,rgba(28,13,52,0.1) 1px,transparent 1px)', backgroundSize: '32px 32px', maskImage: 'radial-gradient(ellipse 90% 90% at 50% 50%,black 40%,transparent 100%)' }}></div>
                 {/* Glow blobs */}
-                <div className="absolute top-6 right-6 w-32 h-32 rounded-full opacity-20 blur-2xl" style={{ background: '#2563EB' }}></div>
+                <div className="absolute top-6 right-6 w-32 h-32 rounded-full opacity-20 blur-2xl" style={{ background: '#1C0D34' }}></div>
                 <div className="absolute bottom-8 left-4 w-24 h-24 rounded-full opacity-15 blur-2xl" style={{ background: '#C9A84C' }}></div>
                 {/* Monogram */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                  <div className="w-24 h-24 rounded-2xl flex items-center justify-center text-4xl font-extrabold text-white" style={{ background: 'rgba(37,99,235,0.25)', border: '1px solid rgba(37,99,235,0.4)', letterSpacing: '-0.05em' }}>ZD</div>
+                  <div className="w-24 h-24 rounded-2xl flex items-center justify-center text-4xl font-extrabold text-white" style={{ background: 'rgba(28,13,52,0.25)', border: '1px solid rgba(28,13,52,0.4)', letterSpacing: '-0.05em' }}>ZD</div>
                   <div className="text-center">
                     <div className="text-white font-bold text-lg leading-tight">Founder &amp; CEO</div>
                     <div className="text-blue-300/70 text-sm mt-1">Zyra Digital</div>

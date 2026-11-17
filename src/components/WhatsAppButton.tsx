@@ -6,7 +6,8 @@ export default function WhatsAppButton() {
       href="https://wa.me/919999999999?text=Hi%20Zyra%20Digital%2C%20I%27d%20like%20to%20grow%20my%20business!"
       target="_blank"
       rel="noopener"
-      className="fixed bottom-6 left-6 z-50 flex items-center gap-3 bg-brand hover:bg-brand-dark text-white px-5 py-3.5 rounded-full shadow-2xl floating-wa cursor-pointer transition-transform hover:scale-105 focus-visible:ring-4 focus-visible:ring-blue-400"
+      className="fixed bottom-6 right-6 z-50 flex items-center gap-3 text-white px-5 py-3.5 rounded-full shadow-2xl floating-wa cursor-pointer transition-transform hover:scale-105 focus-visible:ring-4 focus-visible:ring-green-400"
+      style={{ background: '#25D366' }}
       aria-label="Chat on WhatsApp"
     >
       <svg className="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
