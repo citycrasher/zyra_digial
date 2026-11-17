@@ -13,21 +13,19 @@ export default function About() {
           {/* Left: Founder visual */}
           <div className="reveal-left flex justify-center">
             <div className="relative">
-              <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-3xl relative overflow-hidden" style={{ background: 'linear-gradient(135deg,#0F172A 0%,#1E2A4A 60%,#1E3A8A 100%)' }}>
-                {/* Mesh grid */}
-                <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(rgba(28,13,52,0.1) 1px,transparent 1px),linear-gradient(90deg,rgba(28,13,52,0.1) 1px,transparent 1px)', backgroundSize: '32px 32px', maskImage: 'radial-gradient(ellipse 90% 90% at 50% 50%,black 40%,transparent 100%)' }}></div>
-                {/* Glow blobs */}
-                <div className="absolute top-6 right-6 w-32 h-32 rounded-full opacity-20 blur-2xl" style={{ background: '#1C0D34' }}></div>
-                <div className="absolute bottom-8 left-4 w-24 h-24 rounded-full opacity-15 blur-2xl" style={{ background: '#C9A84C' }}></div>
-                {/* Monogram */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                  <div className="w-24 h-24 rounded-2xl flex items-center justify-center text-4xl font-extrabold text-white" style={{ background: 'rgba(28,13,52,0.25)', border: '1px solid rgba(28,13,52,0.4)', letterSpacing: '-0.05em' }}>ZD</div>
-                  <div className="text-center">
-                    <div className="text-white font-bold text-lg leading-tight">Founder &amp; CEO</div>
-                    <div className="text-blue-300/70 text-sm mt-1">Zyra Digital</div>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs font-semibold px-4 py-2 rounded-full" style={{ background: 'rgba(201,168,76,0.15)', color: '#F0D070', border: '1px solid rgba(201,168,76,0.3)' }}>
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-3xl relative overflow-hidden" style={{ background: '#0F172A' }}>
+                {/* Founder photo */}
+                <img
+                  src="/images/founder.webp"
+                  alt="Founder & CEO of Zyra Digital"
+                  className="absolute inset-0 w-full h-full object-cover object-top"
+                />
+                {/* Bottom overlay with name/badge */}
+                <div className="absolute bottom-0 left-0 right-0 px-4 pb-4 pt-8" style={{ background: 'linear-gradient(to top,rgba(15,23,42,0.92) 0%,transparent 100%)' }}>
+                  <div className="text-white font-bold text-base leading-tight">Founder &amp; CEO</div>
+                  <div className="text-blue-300/80 text-xs mt-0.5 mb-2">Zyra Digital</div>
+                  <div className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full" style={{ background: 'rgba(201,168,76,0.2)', color: '#F0D070', border: '1px solid rgba(201,168,76,0.35)' }}>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                     Google &amp; Meta Certified
                   </div>
                 </div>
