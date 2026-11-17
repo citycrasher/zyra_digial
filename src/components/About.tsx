@@ -18,14 +18,14 @@ export default function About() {
                 <img
                   src="/images/founder.webp"
                   alt="Founder & CEO of Zyra Digital"
-                  className="absolute inset-0 w-full h-full object-cover object-top"
+                  style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
                 />
                 {/* Bottom overlay with name/badge */}
-                <div className="absolute bottom-0 left-0 right-0 px-4 pb-4 pt-8" style={{ background: 'linear-gradient(to top,rgba(15,23,42,0.92) 0%,transparent 100%)' }}>
-                  <div className="text-white font-bold text-base leading-tight">Founder &amp; CEO</div>
-                  <div className="text-blue-300/80 text-xs mt-0.5 mb-2">Zyra Digital</div>
-                  <div className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full" style={{ background: 'rgba(201,168,76,0.2)', color: '#F0D070', border: '1px solid rgba(201,168,76,0.35)' }}>
-                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '32px 16px 16px', background: 'linear-gradient(to top,rgba(15,23,42,0.92) 0%,transparent 100%)' }}>
+                  <div style={{ color: '#fff', fontWeight: 700, fontSize: '15px', lineHeight: 1.3 }}>Founder &amp; CEO</div>
+                  <div style={{ color: 'rgba(147,197,253,0.8)', fontSize: '12px', marginTop: '2px', marginBottom: '8px' }}>Zyra Digital</div>
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '11px', fontWeight: 600, padding: '5px 10px', borderRadius: '999px', background: 'rgba(201,168,76,0.2)', color: '#F0D070', border: '1px solid rgba(201,168,76,0.35)' }}>
+                    <svg style={{ width: '12px', height: '12px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                     Google &amp; Meta Certified
                   </div>
                 </div>
